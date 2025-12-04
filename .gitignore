@@ -20,6 +20,7 @@ ENV/
 
 # Data files (students will add their own)
 data/*.csv
+!data/TDATA.csv
 data/*.txt
 data/*.dat
 
