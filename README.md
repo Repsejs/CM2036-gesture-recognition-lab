@@ -110,7 +110,7 @@ X-acc;Y-acc;Z-acc;label
 ```
 
 - **Separator**: Semicolon (`;`)
-- **Samples per gesture**: 200 rows (2 seconds of data sampled at 100 Hz)
+- **Samples per gesture**: 100 rows (2 seconds of data sampled at 50 Hz)
 - **Columns**: X-acc, Y-acc, Z-acc, label
 
 See `data/sample_data_format.md` for complete details.

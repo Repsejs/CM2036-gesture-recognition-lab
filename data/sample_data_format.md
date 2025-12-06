@@ -13,7 +13,7 @@ Each CSV file should contain acceleration data with the following columns:
 ## Format Specifications
 
 - **Separator**: Semicolon (`;`)
-- **Samples per gesture**: 200 rows (representing 2 seconds of data)
+- **Samples per gesture**: 100 rows (representing 2 seconds of data)
 - **Header**: First row should contain column names
 
 ## Example Data Structure
@@ -33,13 +33,13 @@ X-acc;Y-acc;Z-acc;label
 -58;7;4151;idle
 -45;120;4200;wave
 -42;135;4215;wave
-... (200 rows total for this gesture)
+... (100 rows total for this gesture)
 ```
 
 ## Important Notes
 
-1. Each gesture consists of **exactly 200 consecutive rows**
-2. All 200 rows for a single gesture should have the **same label**
+1. Each gesture consists of **exactly 100 consecutive rows**
+2. All 100 rows for a single gesture should have the **same label**
 3. The header row (`X-acc;Y-acc;Z-acc;label`) appears at the start of the file
 4. Multiple gestures are stored sequentially in the same file
 
