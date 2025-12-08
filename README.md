@@ -54,6 +54,16 @@ This will:
 - Install Python 3.12
 - Install all required packages (TensorFlow, NumPy, Pandas, etc.)
 
+### 4. Get data collection program
+
+Clone the below repo that will be used for data collection either with an sd card or with a serial connection, follow the link and its instructions 
+
+```bash
+https://github.com/Repsejs/gesture_data_collection
+```
+
+(Make sure to place the folder in your gd32v103 toolchain projects folder and use your toolchains provided makefile and such!)
+
 ### 4. Prepare Your Data
 
 Place your IMU data CSV file in the `data/` directory. See `data/sample_data_format.md` for the expected format.
