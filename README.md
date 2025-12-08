@@ -62,7 +62,7 @@ Clone the below repo that will be used for data collection either with an sd car
 https://github.com/Repsejs/gesture_data_collection
 ```
 
-(Make sure to place the folder in your gd32v103 toolchain projects folder and use your toolchains provided makefile and such!)
+(Make sure to place the folder in your gd32v103 toolchain projects folder and use your toolchains provided makefile, .deps, and .vscode!)
 
 ### 4. Prepare Your Data
 
