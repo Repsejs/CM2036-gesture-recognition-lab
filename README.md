@@ -38,7 +38,8 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 ### 2. Clone or Download This Repository
 
 ```bash
-cd gesture-recognition-lab
+git clone https://github.com/Repsejs/CM2036-gesture-recognition-lab.git
+cd CM2036-gesture-recognition-lab
 ```
 
 ### 3. Sync Dependencies
@@ -54,19 +55,23 @@ This will:
 - Install Python 3.12
 - Install all required packages (TensorFlow, NumPy, Pandas, etc.)
 
-### 4. Get data collection program
+### 4. Get data collection program 
 
-Clone the below repo that will be used for data collection either with an sd card or with a serial connection, follow the link and its instructions 
+Clone the below repo that will be used for data collection either with an sd card (still requires serial) or with a serial connection, follow the link and its instructions 
+
+Make sure to place the folder in your gd32v103 toolchain projects folder and use your toolchains provided makefile, .deps, and .vscode!
+
+Furthemore keep the current repository and this separate to avoid dependency collision
 
 ```bash
 https://github.com/Repsejs/gesture_data_collection
 ```
 
-(Make sure to place the folder in your gd32v103 toolchain projects folder and use your toolchains provided makefile, .deps, and .vscode!)
-
 ### 4. Prepare Your Data
 
 Place your IMU data CSV file in the `data/` directory. See `data/sample_data_format.md` for the expected format.
+
+There is also a provided data file that can be used!
 
 ### 5. Launch Jupyter (Optional, if you dont want to use an IDE)
 
@@ -89,7 +94,7 @@ Open `gesture_recognition_lab.ipynb` and follow the step-by-step instructions!
 As you work through the lab, fill in `answers.py` with your answers to the questions from each step. Run it to check your understanding:
 
 ```bash
-uv run python answers.py
+uv run answers.py
 ```
 
 This will verify your answers without showing you the correct ones. You must complete the answer sheet as part of the lab.
